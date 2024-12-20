@@ -1,0 +1,166 @@
+/* Variables de colores */
+:root {
+    --fondo-negro: #111;
+    --texto-blanco: #fff;
+    --dorado: #d4af37;
+    --gris: #222;
+    --gris-claro: #333;
+    --sombra: rgba(0, 0, 0, 0.3);
+}
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.reservation-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+/* Formulario */
+.reservation-form {
+    flex: 1;
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.3s ease;
+}
+
+.reservation-form:hover {
+    transform: translateY(-5px);
+}
+
+.reservation-form h2 {
+    font-size: 2rem;
+    color: var(--dorado);
+    margin-bottom: 1rem;
+}
+
+.reservation-form p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: var(--texto-blanco);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--gris-claro);
+    color: var(--texto-blanco);
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    border: 1px solid var(--dorado);
+    box-shadow: 0 0 8px var(--dorado);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: var(--dorado);
+    color: var(--fondo-negro);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--texto-blanco);
+    color: var(--fondo-negro);
+    transform: translateY(-3px);
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--sombra);
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: var(--dorado);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.contact-item .icon {
+    font-size: 1.5rem;
+    color: var(--dorado);
+}
+
+.contact-info ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--dorado);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--texto-blanco);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .reservation-container {
+        flex-direction: column;
+    }
+}
+
+

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+HR+Lijeva:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="img/LogoP.jpeg">
+    <title>Pizzeria Emiliani</title>
+</head>
+<body>
+    <main class="main">
+    <section  id="inicio"  class = "contenedor1">
+        <div class="sombra"></div>
+        <header class ="cabecera">
+            <div class="logo">
+                <img class="logoModificar" src="img/LogoP.jpeg" alt="Logo principal de Pizzería Emiliani">
+            </div>
+            <nav class="nav-bar">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menu</a>
+                <a href="#promociones">Promociones</a>
+                <a href="./reservas.html">Reserva</a>
+                <a href="#ayuda">Ayuda</a> <!--en caso de que haya un retraso de la pizza-->
+            </nav>
+            <div class="busqueda">
+                <div class="buscar-icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="3"> 
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path> 
+                        <path d="M21 21l-6 -6"></path> 
+                    </svg>
+                </div>
+                <div class="buscar-bar">
+                    <form action="/buscar" method="get">
+                        <input
+                            type="text"
+                            name="query"
+                            id="search-input"
+                            placeholder="Buscar..."
+                            required
+                        />
+                    </form>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="3"> 
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path> 
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path> 
+                    <path d="M17 17h-11v-14h-2"></path> 
+                    <path d="M6 5l14 1l-1 7h-13"></path> 
+                </svg>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="banner-texto">
+                <h1 class="titulo">Bienvenido a Pizzería Emiliani</h1>
+                <h1 class="titulo2">Triple <span class="modificar-texto">Box</span> <span> Navideño</span></h1>
+                <div class="boton">
+                    <a href="#">Ordena ya!</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Contenedor2 - menu-section -->
+    <section id="menu" class="contenedor2">
+        <!--Especialidades-->
+        <section class="Especialidades">
+            <h2>Especialidades</h2>
+
+            <div class="menu-contenedor">
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/PizzaClasica.png" alt="Pizza Bellaco">
+                        <h3>Pizza Bellaco</h3>
+                        <p>Salchicha, chorizo, tocino, choclo, maduro laminado gratinado con más queso</p>
+                        <p class="precio">Pequeña - s/27, Extra Grande - s/49, Extra Familiar - s/64</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Mitad-Mitad.png" alt="Toque Dulce">;
+                        <h3>Toque Dulce</h3>
+                        <p>Incluye ingredientes dulces</p>
+                        <p class="precio">Pequeña - s/27, Extra Grande - s/49, Extra Familiar - s/64</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Americana.jpg" alt="Pizza Exótica">
+                        <h3>Pizza Exótica</h3>
+                        <p>Salchicha, chorizo, Suri, sacha culantro y ají dulce</p>
+                        <p class="precio">Pequeña - s/27, Extra Grande - s/49, Extra Familiar - s/64</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/PizzaClasica.png" alt="Aroma Sabor Nuevo">
+                        <h3>Aroma Sabor Nuevo</h3>
+                        <p>Ingredientes frescos y nuevos sabores</p>
+                        <p class="precio">Pequeña - s/27, Extra Grande - s/49, Extra Familiar - s/64</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Mitad-Mitad.png" alt="Verdureszza">
+                        <h3>Verdureszza</h3>
+                        <p>Verduras del día con bastante queso</p>
+                        <p class="precio">Pequeña - s/27, Extra Grande - s/49, Extra Familiar - s/64</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Pizzas Clasicas-->
+        <section class="clasicas">
+            <h2>Pizzas Clásicas</h2>
+            <div class="menu-contenedor">
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Hawaiina.jpg" alt="Pizza Hawaiana">
+                        <h3>Pizza Hawaiana</h3>
+                        <p class="precio">Personal XL - s/12.90, Pequeña - s/25, Extra Grande - s/46, Extra Familiar - s/60</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Americana.jpg" alt="Pizza Americana">
+                        <h3>Pizza Americana</h3>
+                        <p class="precio">Personal XL - s/12.90, Pequeña - s/25, Extra Grande - s/46, Extra Familiar - s/60</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/PizzaClasica.png" alt="Pizza Peperoni">
+                        <h3>Pizza Peperoni</h3>
+                        <p class="precio">Personal XL - s/12.90, Pequeña - s/25, Extra Grande - s/46, Extra Familiar - s/60</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Bebidas-->
+        <section class="Bebidas">
+            <h2>Bebidas</h2>
+            <div class="menu-contenedor">
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Refrescos.jpg" alt="Refresco del Día">
+                        <h3>Refresco del Día</h3>
+                        <p class="precio">Vaso - s/3, Jarra - s/12</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/gaseosa.jpg" alt="Gaseosa Inca o Coca-Cola">
+                        <h3>Gaseosa Inca o Coca-Cola</h3>
+                        <p class="precio">195ml - s/2, 500ml - s/4.50, 1L - s/8, 2.5L - s/15</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/fruti.jpg" alt="Fruti Fresh">
+                        <h3>Fruti Fresh <span>Refresco Gasificado</span></h3>
+                        <p class="precio">s/6</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/pepsiFanta.jpg" alt="Cerveza Pilsen">
+                        <h3>Pepsi Fanta</h3>
+                        <p class="precio">s/11</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--bebidas-cocteles-->
+        <section class="cocteles">
+            <h2>Cócteles</h2>
+            <div class="menu-contenedor">
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Chilcanos2.jpg" alt="Chilcanos">
+                        <h3>Chilcanos</h3>
+                        <p>Fresa - Arandanos - Fruta del Día</p>
+                        <p class="precio">s/12</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/mojito refrescante.jpg" alt="Mojito Refrescante">
+                        <h3>Mojito Refrescante</h3>
+                        <p class="precio">s/12</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/cubaLibre.jpg" alt="Cuba Libre">
+                        <h3>Cuba Libre</h3>
+                        <p class="precio">s/12</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Tinto de verano.jpg" alt="Tinto de Verano">
+                        <h3>Tinto de Verano</h3>
+                        <p class="precio">s/15</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Gin and Tonic.jpg" alt="Gin and Tonic">
+                        <p>Gin and Tonic</p>
+                        <p class="precio">s/10</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="card">
+                        <img src="img/Cerveza.jpg" alt="cerveza Pilsen">
+                        <h3>Cerveza Pilsen</h3>
+                        <p class="precio">s/10</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </section> <!--Aqui termina menu-contenedor2-->
+
+    <!--Conrendero 3-->
+
+    <section id="promociones" class="contenedor3">
+        <h2>Ofertas</h2>    
+
+        <div class="oferta-principal">
+
+            <div class="prom">
+                <img src="img/oferta1.jpeg" alt="Nuevo Borde de Queso">
+                <div class="info-prom">
+                    <span class="fecha">05/12/2024</span>
+                    <p class="categoria">Nuevo Borde de Queso</p>
+                </div>
+            </div>
+
+            <div class="prom">
+                <img src="img/oferta2.jpeg" alt="Pizza Familiar">
+                <div class="info-prom">
+                    <span class="fecha">05/12/2024</span>
+                    <p class="categoria">Pizza Familiar</p>
+                </div>
+            </div>
+
+            <div class="prom">
+                <img src="img/oferta3.jpeg" alt="Extra Grande">
+                <div class="info-prom">
+                    <span class="fecha">05/12/2024</span>
+                    <p class="categoria">Extra Grande</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Contenedor 4-->
+    <section id="ayuda" class="contenedor4">
+        <h2>Ayuda</h2>
+        <div class="ayuda-intro">
+            <h2>¿Necesitas Ayuda?</h2>
+            <p>Encuentra respuestas a tus preguntas o ponte en contacto con nosotros para recibir asistencia personalizada.</p>
+        </div>
+        <div class="ayuda-opciones">
+            <div class="opcion">
+                <h3>Preguntas Frecuentes (FAQ)</h3>
+                <p>Consulta nuestras respuestas a las preguntas más comunes.</p>
+                <a href="#faq" class="btn">Leer más</a>
+            </div>
+            <div class="opcion">
+                <h3>Soporte Técnico</h3>
+                <p>¿Tienes un problema técnico? Nuestro equipo está aquí para ayudarte.</p>
+                <a href="#soporte" class="btn">Contáctanos</a>
+            </div>
+            <div class="opcion">
+                <h3>Guías y Tutoriales</h3>
+                <p>Accede a recursos y guías paso a paso para aprovechar al máximo nuestros servicios.</p>
+                <a href="#guias" class="btn">Ver guías</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    </main>
+        
+    <footer class="footer">
+        <p>Todos los derechos reservados,</p>
+    </footer>
+
+    <!-- Código HTML aquí -->
+    <script src="Script.js"></script>
+
+</body>
+</html>

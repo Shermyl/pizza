@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <title>Reservación</title>
+    <link rel="preload" href="css/stylereserva.css" as="style">
+    <link href="css/stylereserva.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sección de Reservación -->
+    <section class="reservation-container">
+        <div class="reservation-form">
+            <h2>Reserva en Línea</h2>
+            <p>Realiza tu reserva llenando el siguiente formulario.</p>
+            <form action="guardar_reserva.php" method="post">
+                <!-- Campos del formulario -->
+                <div class="form-row">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <div class="form-row">
+                    <select name="personas" required>
+                        <option value="" disabled selected>1 Persona</option>
+                        <option value="1">1 Persona</option>
+                        <option value="2">2 Personas</option>
+                        <option value="3">3 Personas</option>
+                        <option value="4">4+ Personas</option>
+                    </select>
+                    <input type="date" name="fecha" required>
+                    <input type="time" name="hora" required>
+                </div>
+                <div class="form-row">
+                    <textarea name="mensaje" placeholder="Mensaje (opcional)"></textarea>
+                </div>
+                <!-- Botón -->
+                <button type="submit">Reservar Mesa</button>
+            </form>
+        </div>
+        <!-- Información de Contacto -->
+        <div class="contact-info">
+            <h3>Contáctanos</h3>
+            <div class="contact-item">
+                <span class="icon">&#128222;</span>
+                <p><strong>Teléfono:</strong> <a href="tel:+88123123456">+958-769-498</a></p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">&#127969;</span>
+                <p><strong>Ubicación:</strong>Pasaje Manu B-5, Puerto Maldonado 17000</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.8138538907715!2d-69.18994852500157!3d-12.594516587687334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917b4f2e27d3e821%3A0x252d5f2223497a1!2semiliani%20pizzas%20pem!5e0!3m2!1ses!2spe!4v1734695741914!5m2!1ses!2spe" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                    ></iframe>
+            </div>
+            <div class="contact-item">
+                <span class="icon">&#128337;</span>
+                <p><strong>Horario:</strong></p>
+                <ul>
+                    <li><span>Open:</span> 5:00 pm - 11:00 pm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
